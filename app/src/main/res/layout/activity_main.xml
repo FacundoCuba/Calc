@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.facu.calc.MainActivity">
+
+    <EditText
+        android:id="@+id/numTotal"
+        android:layout_width="319dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:ems="10"
+        android:hint="@string/Total"
+        android:inputType="numberDecimal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="56dp" />
+
+    <EditText
+        android:id="@+id/numPorcentaje"
+        android:layout_width="319dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/Propina"
+        android:inputType="numberDecimal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numTotal"
+        tools:layout_editor_absoluteY="105dp" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="7dp"
+        android:onClick="Calcular"
+        android:text="@string/Boton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numPorcentaje" />
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="214dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcular" />
+</android.support.constraint.ConstraintLayout>
